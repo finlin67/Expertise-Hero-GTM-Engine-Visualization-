@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Levels */
+    --color-page: #020410;    /* Deepest Navy */
+    --color-tile: #040715;    /* Midnight */
+    --color-card: #0F1528;    /* Lighter Navy */
+    
+    /* Structure */
+    --color-border: #1E2745;  /* Muted Blue Stroke */
+    
+    /* Brand Accents */
+    --color-cyan: #00F0FF;    /* Primary Growth */
+    --color-orange: #FF5E00;  /* Secondary Efficiency */
+    --color-gold: #FFD700;    /* Highlight ROI */
+    
+    /* Typography */
+    --color-text-main: #FFFFFF;
+    --color-text-muted: #64748B;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    background-color: var(--color-page);
+    color: var(--color-text-muted);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-tile); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border); 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155; 
+}
